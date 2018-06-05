@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: #3f3b44;
+    background-color: #e4eeed;
+}
+
+.content {
+    width: 1366px;
+    margin: 0 auto;
+    height: 100vh;
+    text-align: center;
+}
+
+.logo h1 a {
+    color: #0ba09c;
+    font-size: 80px;
+    font-weight: 600;
+    margin: 0;
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about form {
+    margin: 0;
+    padding: 0;
+}
+
+.about input {
+    width: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: #c47e33;
+}
+
+.stats {
+    width: 1366px;
+    display: flex;
+    margin: auto;
+}
+
+.menu {
+    width: 166px;
+}
+
+.menu h1 {
+    text-align: left;
+    font-size: 22px;
+}
+
+.menu p {
+    text-align: left;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+#attrSelect {
+    height: 200px;
+    width: 166px;
+    border: none;
+    background-color: #e4eeed;
+    color: #3f3b44;
+}
+
+#populationSelect {
+    width: 166px;
+    border: none;
+    background-color: #e4eeed;
+    color: #3f3b44;
+}
+
+button {
+    background-color: #0ba09c;
+    border-radius: 10px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: #3f3b44;
+}
+
+#submit {
+    width: 146px;
+    height: 44px;
+    margin: 20px;
+    padding: 10px;
+}
+
+#donate {
+    width: 80px;
+    height: 44px;
+    margin: 0px;
+    padding: 5px;
+}
+
+#summary {
+    text-align: left;
+    font-size: 14px;
+}
+
+select:active,
+select:hover {
+    outline: none
+}
+
+.plot {
+    width: 1200px;
+    padding-left: 30px;
+}

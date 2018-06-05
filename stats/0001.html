@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Crypto kitties demography research">
+    <meta name="keywords" content="crypto kitties statistics cattribiutes generation">
+    <title>Purristics - cryptokitties demography</title>
+    <link rel="stylesheet" href="../style.css" type="text/css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110966630-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-110966630-1');
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="logo">
+            <h1><a href="http://www.purristics.com/">purrISTICS</a></h1>
+            <div class="about">
+                <p>If you want to browse more statistics motivate me with ether donation ->
+                    <input type="number" name="donate" min="0.005" value="0.015" step="0.005">
+                    <button id="donate">Donate</button>
+                </p>
+                <p>If you have an idea for new statistics or plots - let me know, comments welcome at <a href='mailto:poziomkaa@gmail.com'>@wildstrawberry</a></p>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="menu">
+                <h1>Select cattribiutes:</h1>
+                <p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+                <form>
+                    <select id="attrSelect" multiple>
+                      <optgroup label="BODY AND TAIL">
+                      <option value="chartreux">Chartreux</option>
+                      <option value="cymric">Cymric</option>
+                      <option value="himalayan">Himalayan</option>
+                      <option value="laperm">Laperm</option>
+                      <option value="mainecoon">Mainecoon</option>
+                      <option value="munchkin">Munchkin</option>
+                      <option value="ragamuffin">Ragamuffin</option>
+                      <option value="sphynx">Sphynx</option>
+                      </optgroup>
+                      <optgroup label="PRIMARY COLOR">
+                            <option value="cloudwhite">Cloudwhite</option>
+                            <option value="cottoncandy">Cottoncandy</option>
+                            <option value="greymatter">Greymatter</option>
+                            <option value="mauveover">Mauveover</option>
+                            <option value="oldlace">Oldlace</option>
+                            <option value="orangesoda">Orangesoda</option>                            
+                            <option value="salmon">Salmon</option>
+                            <option value="shadowgrey">Shadowgrey</option>                            
+                            <option value="topaz">Topaz</option>                   
+                        </optgroup>
+                        <optgroup  label="SECONDARY COLOR">
+                                <option value="bloodred">Bloodred</option>
+                                <option value="emeraldgreen">Emeraldgreen</option>
+                                <option value="granitegrey">Granitegrey</option>
+                                <option value="kittencream">Kittencream</option>
+                                <option value="peach">Peach</option>
+                        </optgroup>
+                        <optgroup  label="PATTERN">
+                                <option value="calicool">Calicool</option>
+                                <option value="jaguar">Jaguar</option>
+                                <option value="luckystripe">Luckystripe</option>
+                                <option value="spock">Spock</option>
+                                <option value="tigerpunk">Tigerpunk</option>
+                                <option value="totesbasic">Totesbasic</option>
+                            </optgroup>
+                            <optgroup  label="PATTERN COLOR">
+                                <option value="barkbrown">Barkbrown</option>
+                                <option value="cerulian">Cerulian</option>
+                                <option value="chocolate">Chocolate</option>
+                                <option value="coffee">Coffee</option>
+                                <option value="lemonade">Lemonade</option>
+                                <option value="royalpurple">Royalpurple</option>
+                                <option value="scarlet">Scarlet</option>
+                                <option value="skyblue">Skyblue</option>
+                                <option value="swampgreen">Swampgreen</option>
+                                <option value="violet">Violet</option>
+                                <option value="wolfgrey">Wolfgrey</option>
+                            </optgroup>
+                            <optgroup  label="EYE TYPE">
+                                <option value="crazy">Crazy</option>
+                                <option value="fabulous">Fabulous</option>
+                                <option value="googly">Googly</option>
+                                <option value="otaku">Otaku</option>
+                                <option value="raisedbrow">Raisedbrow</option>
+                                <option value="simple">Simple</option>
+                                <option value="thicccbrowz">Thicccbrowz</option>
+                                <option value="wingtips">Wingtips</option>
+                            </optgroup>
+                            <optgroup  label="EYE / BACKGROUND COLOR">
+                                <option value="bubblegum">Bubblegum</option>
+                                <option value="chestnut">Chestnut</option>
+                                <option value="gold">Gold</option>
+                                <option value="limegreen">Limegreen</option>
+                                <option value="mintgreen">Mintgreen</option>
+                                <option value="sizzurp">Sizzurp</option>
+                                <option value="strawberry">Strawberry</option>
+                                <option value="topaz">Topaz</option>
+                            </optgroup>
+                            <optgroup  label="MOUTH">
+                                <option value="beard">Beard</option>
+                                <option value="dali">Dali</option>
+                                <option value="gerbil">Gerbil</option>
+                                <option value="happygokitty">Happygokitty</option>
+                                <option value="pouty">Pouty</option>
+                                <option value="saycheese">Saycheese</option>
+                                <option value="soserious">Soserious</option>
+                                <option value="tongue">Tongue</option>
+                                <option value="whixtensions">Whixtensions</option>
+                        </optgroup>
+                    </select>
+
+                </form>
+                <h1>Select population:</h1>
+                <form>
+                    <select id="populationSelect">
+                                <option value="0" selected>All kittehs</option>
+                                <option value="1">Genation:0</option>
+                                <option value="2">Genation:1</option>
+                                <option value="3">Genation:2</option>
+                                <option value="4">Genation:3</option>
+                                <option value="5">Genation:4</option>
+                                <option value="6">Genation:5</option>
+                                <option value="7">Genation:6</option>
+                                <option value="8">Genation:7</option>
+                                <option value="9">Genation:8</option>
+                                <option value="10">Genation:9</option>
+                                <option value="11">Genation:10</option>
+                                <option value="12">Genation:11</option>
+                                <option value="13">Genation:12</option>
+                                <option value="14">Genation:13</option>
+                                <option value="15">Genation:14</option>
+                                <option value="16">Genation:15</option>
+                                <option value="17">Genation:16</option>
+                                <option value="18">Genation:17</option>
+                                <option value="19">Genation:18</option>
+                                <option value="20">Genation:19</option>
+                                <option value="21">Genation:20</option>
+                                <option value="22">Genation:21</option>
+                                <option value="23">Genation:22</option>
+                                <option value="24">Genation:23</option>
+                                <option value="25">Genation:24</option>
+                                <option value="26">Genation:25</option>
+                                <option value="27">Genation:26</option>
+                        </select>
+                </form>
+                <button id="submit">See purrISTICS</button>
+            </div>
+            <div class="plot">
+
+                <div id="summary">
+                    <p>Data obtained by systematic sampling (2938 kittehs)</p>
+                    <p>08 Dec 2107, 16:00 UTC</p>
+                </div>
+                <canvas id="attrPlot" width="1170" height="400">
+                </canvas>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="scripts/0001.js"></script>
+    <script type="text/javascript" src="../donate.js"></script>
+</body>
+
+</html>
